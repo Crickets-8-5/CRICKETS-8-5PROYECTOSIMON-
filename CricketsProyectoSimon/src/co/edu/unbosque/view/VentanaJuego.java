@@ -10,7 +10,7 @@ public class VentanaJuego extends JFrame {
 
 	private PanelJuego pJuego;
 	private PanelImagen pImagenjuego;
-	private JLayeredPane lPane;
+	
 
 	public VentanaJuego() {
 		
@@ -32,9 +32,9 @@ public class VentanaJuego extends JFrame {
 		
 		pJuego = new PanelJuego();
 		pJuego.setBounds(5, 5, 573, 550);
+		pJuego.setOpaque(true);
 		getContentPane().add(pJuego);
-				
-
+			
 	}
 
 	public PanelJuego getpJuego() {

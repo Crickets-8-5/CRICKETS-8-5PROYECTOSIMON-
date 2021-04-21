@@ -29,59 +29,65 @@ public class PanelInstrucciones extends JPanel {
 
 		b_menu = new JButton("Volver");
 		b_menu.setBounds(5, 10, 95, 30);
+		b_menu.setBackground(Color.lightGray);
 		b_menu.setActionCommand("VOLVER");
 		add(b_menu);
 
 		e_titulo = new JLabel("INSTRUCCIONES");
-		e_titulo.setFont(new Font("Algerian", 20, 40));
-		e_titulo.setBounds(220, 30, 300, 45);
+		e_titulo.setFont(new Font("Algerian", 20, 30));
+		e_titulo.setForeground(Color.white);
+		e_titulo.setBounds(260, 40, 300, 45);
 		add(e_titulo);
 
 		e_como = new JLabel("¿Cómo se juega?");
 		e_como.setFont(new Font(getName(), getFont().BOLD, 14));
-		e_como.setBounds(50, 90, 130, 20);
+		e_como.setForeground(Color.white);
+		e_como.setBounds(230, 85, 130, 20);
 		add(e_como);
 
 		c_como = new JTextArea("SIMONjar es un juego interactivo, basado en secuencias numéricas establecidas por el juego con el fin de que el jugador repita esta secuencía en el órden correcto.");
 		c_como.setBackground(new Color(222, 222, 222));
-		c_como.setFont(new Font(getName(), 12, 14));
+		c_como.setFont(new Font(getName(), 12, 12));
 		c_como.setLineWrap(true);
 		c_como.setWrapStyleWord(true);
-		c_como.setBounds(50, 120, 300, 135);
+		c_como.setBounds(230, 115, 300, 70);
 		c_como.setEditable(false);
 		add(c_como);
 
 		e_numran = new JLabel("Numero aleatorio");
 		e_numran.setFont(new Font(getName(), getFont().BOLD, 14));
-		e_numran.setBounds(50, 260, 130, 20);
+		e_numran.setBounds(230, 190, 130, 20);
+		e_numran.setForeground(Color.white);
 		add(e_numran);
 
 		c_num = new JTextArea("El número aleatorio (de 1 a 4 ) es creado para formar un vínculo entre el jugador y el juego, este número o patrón interactua con la mente de manera indiscreta buscando la equivocación por parte del jugador.");
 		c_num.setBackground(new Color(222, 222, 222));
-		c_num.setFont(new Font(getName(), 12, 14));
+		c_num.setFont(new Font(getName(), 12, 12));
 		c_num.setLineWrap(true);
 		c_num.setWrapStyleWord(true);
-		c_num.setBounds(50, 290, 300, 100);
+		c_num.setBounds(230, 210, 300, 65);
 		c_num.setEditable(false);
 		add(c_num);
 
 		e_ej = new JLabel("Ejemplo");
 		e_ej.setFont(new Font(getName(), getFont().BOLD, 14));
-		e_ej.setBounds(420, 90, 130, 20);
+		e_ej.setForeground(Color.white);
+		e_ej.setBounds(194, 277, 130, 20);
 		add(e_ej);
 
-		c_ej = new JTextArea("El juego impone un número aleatorio: [4,1,2,2]\nEl jugador deberá repetir esta secuencía en el mismo órden numérico si quiere obtener un resultado correcto, de lo contrario obtendrá un resultado incorrecto.\n\n NOTA: La interacción se genera por medio de botones correspondientes al número que se quiera repetir.");
+		c_ej = new JTextArea("El juego impone un número aleatorio: [4,1,2,2].\nEl jugador deberá repetir esta secuencía en el mismo órden numérico\nsi quiere obtener un resultado correcto, de lo contrario obtendrá un resultado incorrecto.\nNOTA: La interacción se genera por medio de botones correspondientes al número que se quiera repetir.");
 		c_ej.setBackground(new Color(222, 222, 222));
-		c_ej.setFont(new Font(getName(), 12, 14));
+		c_ej.setFont(new Font(getName(), 12, 12));
 		c_ej.setLineWrap(true);
 		c_ej.setWrapStyleWord(true);
-		c_ej.setBounds(420, 120, 300, 300);
+		c_ej.setBounds(193, 304, 394, 94);
 		c_ej.setEditable(false);
 		add(c_ej);
 
 		b_play = new JButton("¡JUGAR AHORA!");
 		b_play.setActionCommand("PLAY");
-		b_play.setBounds(290, 460, 155, 30);
+		b_play.setBackground(Color.lightGray);
+		b_play.setBounds(600, 10, 155, 30);
 		add(b_play);
 	}
 
